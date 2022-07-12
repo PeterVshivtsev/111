@@ -1,0 +1,117 @@
+body{
+    background-color: bisque;
+}
+
+.container{
+    margin-left: 40%;
+    background-color: rgba(236, 169, 131, 0.466);
+    border: 1px solid transparent;
+    width: 200px;
+    border-radius: 5%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container__header{
+    color: rgb(17, 49, 136);
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.container__paragraph{
+    color: rgb(71, 6, 73);
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.round{
+    border: 5px solid red;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(4, 0, 255, 0.466);
+    border-radius: 50%;
+}
+
+.rectangle{
+    border: 5px solid orange;
+    width: 400px;
+    height: 40px;
+    background-color: rgba(24, 165, 71, 0.466);
+}
+
+.inputContainer{
+    margin-left: 37%;
+    margin-top: 10px;
+    background-color: rgba(236, 169, 131, 0.466);
+    border: 1px solid transparent;
+    width: 400px;
+    border-radius: 5%;
+    justify-content: center;
+}
+
+.inputHandler{
+    width: 200px;
+    margin: 10px;
+    border: 1px solid blue;
+    padding: 5px;
+    background-color: rgb(139, 105, 139);
+    border-radius: 5%;
+    color: yellow;
+}
+
+.inputCheck{
+    margin-right: 10px;
+    cursor: crosshair;
+}
+
+.handlerButton{
+    padding: 5px;
+    font-size: 15px;
+    background-color: #ccc;
+    border: 1px solid black;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.newContainer{
+    margin-left: 30%;
+    background-color: rgba(236, 169, 131, 0.466);
+    border: 1px solid transparent;
+    width: 600px;
+    border-radius: 5%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.society{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.menuHandler__links{
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(243, 199, 199);
+    color: rgb(5, 4, 51);
+    text-decoration-line: none;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.menuHandler__links:hover{
+    background-color: rgb(179, 102, 179);
+    color: wheat;
+    text-decoration-line: underline;
+}
+
+#enterText{
+    color: black;
+    text-shadow: 7px 7px 7px black;
+}
+
+.menuHandler{
+    margin: 20px;
+}

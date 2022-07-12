@@ -1,0 +1,170 @@
+теги - это элементы html
+
+Бывают одинарные теги:
+
+<meta charset="UTF-8" />
+
+<link type="text/css" href="styles.css" rel="stylesheet" /> -- ссылка, которая подключает внутренние файлы проекта (стили и скрипты)
+
+<meta name="viewport" content="width=device-width,initial-scale=1" /> -- это общая информация по стронице, её инициализированный размер (размер моего экрана)
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -- CDN ссылка для подключения сторонних стилей с Интренета
+
+<input class="inputHandler" placeholder="Введите имя" /> -- input тип текст
+
+<input type="checkbox" class="inputCheck" /> -- input с типом чекбокс
+
+<hr> -- это черта, отделяющая
+
+<img src="images/vk.png" width="40px" height="40px" />
+
+Бывают парные теги:
+
+<html></html> -- общий контейнер для распознавания дом-дерево
+
+<head></head> -- метаинформация о сайте (закладка, подключение сторнних файлов и api)
+
+<title>education.com</title> -- название закладки
+
+<body></body> -- контент на странице
+
+<div class="container"> -- контейнер, либо примитивный(любой) элемент
+    <h1 class="container__header">Education</h1> -- заголовок с размером 1
+    <p class="container__paragraph">Education of CSS and HTML</p> -- текст как параграф
+</div> 
+
+<button class="handlerButton">Click on me</button> -- кнопка
+
+<a class="society" href="https://vk.com/vshivtsev_petr" ></a> -- ссылка
+
+ <nav class="menuHandler"></nav> -- навигация
+
+ <i class="fa fa-home" ></i> -- иконка
+
+<h2 id="enterText">hello HTML & CSS</h2> -- загаловок с размером 2
+
+<textarea placeholder="enter text"></textarea> -- место, где можно написать текст (масштабируется)
+
+В тегах есть атрибуты
+
+ссылочные атрибуты:
+
+<a class="society" href="https://vk.com/vshivtsev_petr" ></a> -- тип ссылочного атрибута href - абсолютная ссылка в Интернет или на файлы для подключения
+
+<img src="images/vk.png" width="40px" height="40px" /> -- тип ссылочного атрибута src - используется для локальных медиафайлов (картинки, документы, видео и тд.)
+
+Структура построения html файлов дом-дерево:
+1. <!DOCTYPE html> -- означает, что браузер распознаёт наш файл как дом-дерево
+
+2. <html></html> -- это обёртка, чтобы распозновать наш внутренний код, как HTML
+
+3. <head></head> -- это тег для описания метафинормации
+
+4. <body></body> -- это тег для отрисовки контента (по сути страницы) дом-дерево
+
+5. 
+<!DOCTYPE>
+<html>
+    <header>
+    метаинформация
+    </header>
+    <body>
+    страничный контент
+    </body>
+</html> 
+
+Для того, чтобы обратиться к объектам в нашем дом-дереве мы используем селекторы:
+
+1. селектор класса
+
+<input class="inputHandler" placeholder="Введите имя" /> -- html классом inputHandler (class="inputHandler")
+
+.inputHandler{
+    width: 200px;
+    margin: 10px;
+    border: 1px solid blue;
+    padding: 5px;
+    background-color: rgb(139, 105, 139);
+    border-radius: 5%;
+    color: yellow;
+}
+
+-- обращение к селектору классом inputHandler в CSS
+
+2. Селлектор id
+
+<h2 id="enterText">hello HTML & CSS</h2> -- html объект с id enterText (id="enterText")
+
+#enterText{
+    color: black;
+    text-shadow: 7px 7px 7px black;
+}
+
+-- обращение к селектору id enterText в CSS
+
+3. Общее обращение к тегу
+
+<body></body> -- обращение по наименованию тега
+
+body{
+    background-color: bisque;
+}
+
+-- обращение к тегу body в CSS (пишем без точки!)
+
+a{
+    width: 400px;
+}
+
+-- пример обращения к тегу ссылок
+
+
+
+Внутри тега пишем атрибуты
+
+class="container__header" -- идентификационный атрибут (идентификатор объекта дом-дерево) .Название
+
+type="checkbox" -- тип того или иного объекта (в данном случае галочка (со значением true/false) )
+
+placeholder="Введите имя" -- изначальный текст, который будет в объекте, в котором можно писать текст (просто пример, исчезающий во время ввода текста)
+
+href="https://vk.com/vshivtsev_petr" -- абсолютная ссылка (смотреть ссылки)
+
+src="images/vk.png" -- локальная ссылка (смотреть ссылки)
+
+width="40px" height="40px" -- ширина и высота объекта (чаще всего для задания размера картинок)
+
+id="enterText" -- идентификационный атрибут (идентификатор объекта дом-дерево) #Название
+
+
+
+<link type="text/css" href="styles.css" rel="stylesheet" /> -- пример введения атрибута
+
+
+
+Шпаргалки по CSS:
+
+https://ruseller.com/shporacss.php
+
+    margin-left: 40%; -- внешний отступ от левой стенки
+    background-color: rgba(236, 169, 131, 0.466); -- цвет фона
+    border: 1px solid transparent; -- рамка-ширина рамки-сплошная-заливка-цвет(в данном случае прозрачный)
+    width: 200px; -- ширина
+    height: 200px; -- высота
+    border-radius: 5%; -- закругление рамки
+    padding: 10px; -- внутренний отступ от всех стенок
+    text-align: center; -- выровнить текст внутри по центру
+    margin-bottom: 20px; -- внешний отступ от нижней стенки
+    color: rgb(17, 49, 136); -- цвет текста
+    font-style: oblique; -- стиль текста
+    font-weight: bold; -- жирность текста
+    justify-content: center; -- расположение элементов дом-дерева (по центру)
+    cursor: crosshair; -- курсор (прицел)
+    font-size: 15px; -- размер текста
+    transition: 0.5s; -- скорость анимации
+    text-decoration-line: underline; -- нижнее подчёркивание
+    text-shadow: 7px 7px 7px black; -- тень текста
+    box-shadow: 7px 7px 7px black; -- тень рамки
+    
